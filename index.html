@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Calculator — Standard & Scientific</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">CalcLab</div>
+      <nav class="nav">
+        <button class="nav-btn active" data-target="standard">Standard</button>
+        <button class="nav-btn" data-target="scientific">Scientific</button>
+      </nav>
+    </header>
+
+    <main class="app">
+      <section class="panel" id="standard">
+        <div class="calculator">
+          <div class="display" id="display-standard">0</div>
+          <div class="keys">
+            <button data-action="clear" class="key wide">C</button>
+            <button data-action="back" class="key">⌫</button>
+            <button data-action="percent" class="key">%</button>
+            <button data-action="divide" class="key op">÷</button>
+
+            <button class="key">7</button>
+            <button class="key">8</button>
+            <button class="key">9</button>
+            <button data-action="multiply" class="key op">×</button>
+
+            <button class="key">4</button>
+            <button class="key">5</button>
+            <button class="key">6</button>
+            <button data-action="subtract" class="key op">−</button>
+
+            <button class="key">1</button>
+            <button class="key">2</button>
+            <button class="key">3</button>
+            <button data-action="add" class="key op">+</button>
+
+            <button class="key">0</button>
+            <button class="key">.</button>
+            <button data-action="negate" class="key">±</button>
+            <button data-action="equals" class="key equals">=</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel hidden" id="scientific">
+        <div class="calculator scientific">
+          <div class="display" id="display-sci">0</div>
+          <div class="sci-row">
+            <button class="sci-btn" data-action="sin">sin</button>
+            <button class="sci-btn" data-action="cos">cos</button>
+            <button class="sci-btn" data-action="tan">tan</button>
+            <button class="sci-btn" data-action="ln">ln</button>
+            <button class="sci-btn" data-action="log">log</button>
+          </div>
+          <div class="keys">
+            <button data-action="clear" class="key wide">C</button>
+            <button data-action="back" class="key">⌫</button>
+            <button data-action="pow" class="key">^</button>
+            <button data-action="divide" class="key op">÷</button>
+
+            <button class="key">7</button>
+            <button class="key">8</button>
+            <button class="key">9</button>
+            <button data-action="multiply" class="key op">×</button>
+
+            <button class="key">4</button>
+            <button class="key">5</button>
+            <button class="key">6</button>
+            <button data-action="subtract" class="key op">−</button>
+
+            <button class="key">1</button>
+            <button class="key">2</button>
+            <button class="key">3</button>
+            <button data-action="add" class="key op">+</button>
+
+            <button class="key">0</button>
+            <button class="key">.</button>
+            <button data-action="sqrt" class="key">√</button>
+            <button data-action="equals" class="key equals">=</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
